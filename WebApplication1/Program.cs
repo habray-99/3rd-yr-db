@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebApplication1.Data;
+
 namespace WebApplication1
 {
     public class Program
@@ -5,6 +8,9 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<SchoolContext>(options =>
+                options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -21,6 +27,8 @@ namespace WebApplication1
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            
+            
 
             app.UseRouting();
 
