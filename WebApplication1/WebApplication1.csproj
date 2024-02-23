@@ -4,9 +4,40 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e01b267a-fbb1-4175-9325-230ff8faec8c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\WebApplication1.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\WebApplication1.GlobalUsings.g.cs" />
+    <Compile Include="obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net8.0\WebApplication1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\WebApplication1.sourcelink.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\WebApplication1.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net8.0\project.razor.vscode.bin" />
+    <None Include="obj\Debug\net8.0\WebApplication1.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\WebApplication1.assets.cache" />
+    <None Include="obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\WebApplication1.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net8.0\WebApplication1.RazorAssemblyInfo.cache" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\WebApplication1.csproj.nuget.g.props" />
+    <None Include="obj\WebApplication1.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="BootstrapBlazor" Version="8.2.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -14,6 +45,13 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
     <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.21.121" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net8.0\" />
+    <Folder Include="obj\Debug\net8.0\refint\" />
+    <Folder Include="obj\Debug\net8.0\ref\" />
+    <Folder Include="obj\Debug\net8.0\staticwebassets\" />
   </ItemGroup>
 
 </Project>
